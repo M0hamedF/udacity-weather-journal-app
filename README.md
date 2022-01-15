@@ -9,6 +9,7 @@
 - Install express `npm install express`.
 - Install cors`npm istall cors`.
 - Run the server `node server.js` **port 8000**.
+- Add your API in app.js
 ## Directories
 - node_modules
 - commentsOnlyJS
