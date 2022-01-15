@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Weather Journal</title>
+</head>
+
+<body>
+    <div class="lang">
+        <img id="lang" src="img/south-korea.png" alt="korean" onclick="langchange()" id="korean">
+    </div>
+    <main>
+        <div class="container-input">
+            <h1 class="title" id="title">Weather Journal <img class="nightMode" height="28PX" src="img/sun.png"
+                    id="nightMode" alt="sun/moon" onclick="darkMode()"></h1>
+            <div class="zip">
+                <label id="zipp" for="zip">Zip Code</label>
+                <input id="zip" type="number" placeholder="12345" required>
+            </div>
+            <div class="feeling">
+                <label id="feel" for="feel">How are you Feeling Tonight 😄?</label>
+                <input id="feeling" type="text" placeholder="Cold, Hot, ....">
+            </div>
+            <div class="gen">
+                <button id="generate"> Generate </button>
+            </div>
+        </div>
+        <div class="entryHolder">
+            <p id="recent">Most Recent Entry</p>
+            <div id="city"></div>
+            <div class="position">
+                <div class="degree">
+                    <div id="temp"></div>
+                </div>
+                <div id="content">
+                    <div id="date"></div>
+                </div>
+            </div>
+            <div id="feelling"></div>
+        </div>
+        </div>
+        </div>
+    </main>
+    <script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>
