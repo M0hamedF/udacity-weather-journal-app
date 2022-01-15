@@ -37,9 +37,9 @@ const langchange = () => {
   }
 }
 /* Global Variables */
-const apiKey = 'a7ba244ca3a09737f4266e1d33c3c617';
+const apiKey = '';
 const baseURL1 = 'https://api.openweathermap.org/data/2.5/weather?zip=';
-const baseURL2 = '&units=metric&appid=a7ba244ca3a09737f4266e1d33c3c617';
+const baseURL2 = '&units=metric&appid={your API}';
 const zipCode = document.querySelector("#zip");
 const feeling = document.querySelector("#feeling");
 const myBtn = document.querySelector("#generate");
