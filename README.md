@@ -3,7 +3,7 @@
 ## Overview
 - Used to get weather temperature by zip code **US only**.
 ## Instructions
-- Unzip "weather-journal-app".
+
 - Make sure you have "Node js" latest version.
 - Open the terminal.
 - Install express `npm install express`.
@@ -21,10 +21,6 @@
 - package-lock.json
 - package.json
 - server.js
- ## Acknowledgements and credits
-  - Udacity
-  - MDN Web Docs
-  - w3schools
-  - FWD online community
+
 ## Contribute
   - If you have any suggestions that would make this better create a pull request.
