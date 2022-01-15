@@ -1,5 +1,4 @@
 body {
-    /*     font-family: -apple-system, BlinkMacSystemFont, sans-serif;*/
     background-image: url(img/wallpaper.jpg);
     color: aliceblue;
     font-weight: 900;
@@ -16,18 +15,15 @@ body {
 
 main {
     text-align: center;
-    /*     font-family: 'Oswald', sans-serif; */
     display: grid;
     justify-items: center;
 }
 
 h1 {
-    /*background-color: #4542e7; */
     font-size: 40px;
 }
 
 .container-input {
-    /*background-color: aquamarine; */
     height: auto;
     width: 500px;
     margin-bottom: 20px;
@@ -35,7 +31,6 @@ h1 {
 }
 
 .entryHolder  {
-    /*background-color: aquamarine; */
     background: rgba(180, 178, 178, 0.4);
     height: auto;
     width: 700px;
@@ -59,7 +54,6 @@ margin-top: -150px;
 }
 
 .entryHolder .position {
-    /*background-color: beige;  */
     height: auto;
     width: 700px;
     display: flex;
@@ -86,26 +80,21 @@ label {
 }
 
 .degree {
-    /*background-color: #4542e7;  */
     height: 200px;
     width: auto;
     text-align: center;
     font-family: 'Lora', serif;
-    /*     color: white; */
 }
 
 .date {
-    /*background-color: #15144e;  */
     height: 200px;
     margin-top: -20px;
     width: auto;
     font-size: 55px;
     text-align: center;
     font-family: 'Lora', serif;
-    /*     color: white; */
 }
 
-/* Buttons */
 .gen button {
     background-color: rgba(39, 185, 245, 0.7);
     border: none;
