@@ -7,7 +7,7 @@
 - Make sure you have "Node js" latest version.
 - Open the terminal.
 - Install express `npm install express`.
-- Install cors`npm istall cors`.
+- Install cors`npm install cors`.
 - Run the server `node server.js` **port 8000**.
 - Add your API in app.js
 ## Directories
