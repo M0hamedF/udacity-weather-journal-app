@@ -22,6 +22,8 @@ languagee = 1
 const langchange = () => {
   if (languagee == 1) {
     document.getElementById("lang").src = "img/united-kingdom.png";
+    document.getElementById("title").innerHTML = "날씨 저널 " + `<img class="nightMode" height="28PX" src="img/sun.png"
+    id="nightMode" alt="sun/moon" onclick="darkMode()">`;
     document.getElementById("zipp").innerHTML = "우편 번호";
     document.getElementById("feel").innerHTML = "오늘 기분이 어때 😄?";
     document.getElementById("generate").innerHTML = "생성하다";
@@ -29,6 +31,8 @@ const langchange = () => {
     languagee = 0
   } else {
     document.getElementById("lang").src = "img/south-korea.png";
+    document.getElementById("title").innerHTML = "Weather Journal " + `<img class="nightMode" height="28PX" src="img/sun.png"
+    id="nightMode" alt="sun/moon" onclick="darkMode()">`;
     document.getElementById("zipp").innerHTML = "Zip Code";
     document.getElementById("feel").innerHTML = "How are you Feeling Tonight 😄?";
     document.getElementById("generate").innerHTML = "Generate";
