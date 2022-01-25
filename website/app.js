@@ -34,7 +34,7 @@ const langchange = () => {
     document.getElementById("title").innerHTML = "Weather Journal " + `<img class="nightMode" height="28PX" src="img/sun.png"
     id="nightMode" alt="sun/moon" onclick="darkMode()">`;
     document.getElementById("zipp").innerHTML = "Zip Code";
-    document.getElementById("feel").innerHTML = "How are you Feeling Tonight 😄?";
+    document.getElementById("feel").innerHTML = "How are you Feeling Today 😄?";
     document.getElementById("generate").innerHTML = "Generate";
     document.getElementById("recent").innerHTML = "Most Recent Entry";
     languagee = 1
