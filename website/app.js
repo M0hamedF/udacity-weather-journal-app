@@ -1,12 +1,12 @@
 /* Nigth Mode */
 night = 1;
-mood = 1;
+
 const darkMode = () => {
   var element = document.body;
   element.classList.toggle("dark_mode");
   if (night == 1 && mood == 1) {
     document.getElementById("nightMode").src = "img/half-moon.png";
-    night = 0
+night = 0
   }
   else {
     document.getElementById("nightMode").src = "img/sun.png";
@@ -89,14 +89,14 @@ async function weather() {
   const res1 = await postData('/postData', newData);
   await updateUI();
 }
-  /* post data to html */
+/* post data to html */
 async function updateUI() {
   const res = await fetch('/getData');
   const data = await res.json();
   temp.innerHTML = (data.temp + " °C");
   date.innerHTML = newDate;
   city.innerHTML = data.city;
-  feelling.innerHTML= ("You are feeling " + feeling.value + " !!");
+  feelling.innerHTML = ("You are feeling " + feeling.value + " !!");
 };
 /* event listener */
 myBtn.addEventListener("click", weather);
