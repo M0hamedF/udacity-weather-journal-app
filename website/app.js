@@ -22,8 +22,6 @@ languagee = 1
 const langchange = () => {
   if (languagee == 1) {
     document.getElementById("lang").src = "img/united-kingdom.png";
-    document.getElementById("title").innerHTML = "날씨 저널 " + `<img class="nightMode" height="28PX" src="img/sun.png"
-    id="nightMode" alt="sun/moon" onclick="darkMode()">`;
     document.getElementById("zipp").innerHTML = "우편 번호";
     document.getElementById("feel").innerHTML = "오늘 기분이 어때 😄?";
     document.getElementById("generate").innerHTML = "생성하다";
@@ -31,19 +29,17 @@ const langchange = () => {
     languagee = 0
   } else {
     document.getElementById("lang").src = "img/south-korea.png";
-    document.getElementById("title").innerHTML = "Weather Journal " + `<img class="nightMode" height="28PX" src="img/half-moon.png"
-    id="nightMode" alt="sun/moon" onclick="darkMode()">`;
     document.getElementById("zipp").innerHTML = "Zip Code";
-    document.getElementById("feel").innerHTML = "How are you Feeling Today 😄?";
+    document.getElementById("feel").innerHTML = "How are you Feeling Tonight 😄?";
     document.getElementById("generate").innerHTML = "Generate";
     document.getElementById("recent").innerHTML = "Most Recent Entry";
     languagee = 1
   }
 }
 /* Global Variables */
-const apiKey = '';
+const apiKey = 'a7ba244ca3a09737f4266e1d33c3c617';
 const baseURL1 = 'https://api.openweathermap.org/data/2.5/weather?zip=';
-const baseURL2 = '&units=metric&appid=';
+const baseURL2 = ',us&units=metric&appid=a7ba244ca3a09737f4266e1d33c3c617';
 const zipCode = document.querySelector("#zip");
 const feeling = document.querySelector("#feeling");
 const myBtn = document.querySelector("#generate");
@@ -93,14 +89,14 @@ async function weather() {
   const res1 = await postData('/postData', newData);
   await updateUI();
 }
-/* post data to html */
+  /* post data to html */
 async function updateUI() {
   const res = await fetch('/getData');
   const data = await res.json();
   temp.innerHTML = (data.temp + " °C");
   date.innerHTML = newDate;
   city.innerHTML = data.city;
-  feelling.innerHTML = ("You are feeling " + feeling.value + " !!");
+  feelling.innerHTML= ("You are feeling " + feeling.value + " !!");
 };
 /* event listener */
 myBtn.addEventListener("click", weather);
