@@ -27,7 +27,7 @@ const langchange = () => {
     languagee = 0
   } else {
     document.getElementById("lang").src = "img/south-korea.png";
-    document.getElementById("title").innerHTML = "Weather Journal " + `<img class="nightMode" height="28PX" src="img/sun.png"
+    document.getElementById("title").innerHTML = "Weather Journal " + `<img class="nightMode" height="28PX" src="img/half-moon.png"
     id="nightMode" alt="sun/moon" onclick="darkMode()">`;
     document.getElementById("zipp").innerHTML = "Zip Code";
     document.getElementById("feel").innerHTML = "How are you Feeling Today 😄?";
