@@ -1,15 +1,19 @@
 /* Nigth Mode */
 night = 1;
-
+mood = 1;
 const darkMode = () => {
   var element = document.body;
   element.classList.toggle("dark_mode");
   if (night == 1 && mood == 1) {
     document.getElementById("nightMode").src = "img/half-moon.png";
-night = 0
+/*     document.getElementById("feel").innerHTML = "How are you Feeling Today 😄?";
+ */    night = 0
+    mood = 0
   }
   else {
     document.getElementById("nightMode").src = "img/sun.png";
+/*     document.getElementById("feel").innerHTML = "How are you Feeling Tonight 😄?";
+ */    mood = 1
     night = 1
   }
 }
