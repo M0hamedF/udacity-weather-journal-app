@@ -12,7 +12,6 @@
 - Add your API in app.js
 ## Directories
 - node_modules
-- commentsOnlyJS
 - website
   - index.html
   - styles.css    
