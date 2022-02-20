@@ -1,7 +1,7 @@
 # Weather-Journal App Project
 
 ## Overview
-- Used to get weather temperature by zip code **US only**.
+- The purpose of this project is to provide current weather data via API. "US only"
 ## Instructions
 
 - Make sure you have "Node js" latest version.
